@@ -1,0 +1,28 @@
+# Dev
+.editorconfig
+.flake8
+.pre-commit-config.yaml
+pyproject.toml
+requirements-dev.txt
+
+# Environment
+.env.*
+venv/
+
+# Git
+.git/
+.gitignore
+
+# IDEs
+.idea/
+.vscode/
+
+# Project
+.dockerignore
+Dockerfile
+Makefile
+README.md
+
+# Web
+web/**
+!web/build/

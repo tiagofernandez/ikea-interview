@@ -1,0 +1,2 @@
+graft warehouse/web
+global-exclude *.pyc

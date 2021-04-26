@@ -1,0 +1,4 @@
+[flake8]
+application_import_names = warehouse
+exclude = test*.py
+max-line-length = 120
