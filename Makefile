@@ -84,14 +84,15 @@ shell: venv
 	ipython
 
 format: venv
-	black warehouse --exclude="migrations"
 	cd web && yarn format
+	black warehouse --exclude="migrations"
 
 lint: venv
-	flake8 warehouse
 	cd web && yarn lint
+	flake8 warehouse
 
 test: venv
+	cd web && yarn test
 	python -m pytest --capture=no
 
 cover: venv

@@ -1,8 +1,7 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
+
 import App from "./App";
 
-test("renders search button", () => {
+test("renders without crashing", () => {
     render(<App />);
-    const linkElement = screen.getByText(/search/i);
-    expect(linkElement).toBeInTheDocument();
 });
